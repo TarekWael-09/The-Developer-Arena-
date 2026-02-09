@@ -23,6 +23,4 @@ This project allows users to manage their personal expenses by following a stand
   - `shutil`
   - `datetime`
 
----
 
-## 📂 Project Structure
