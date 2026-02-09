@@ -1,25 +1,3 @@
-PersonalFinanceManager/
-│
-├─ README.md
-├─ main.py
-├─ requirements.txt
-│
-├─ src/
-│   └─ expense_manager.py  # ممكن تحط الكود اللي انت عاملته هنا
-│
-├─ data/
-│   └─ sample_expenses.csv  # ممكن تحط بيانات تجريبية هنا
-│
-├─ docs/
-│   └─ user_guide.md
-│
-├─ tests/
-│   └─ test_expense_manager.py
-│
-PersonalFinanceManager/
-└─ screenshots/
-   └─ app_screenshot.png  <-- الصورة اللي انت رفعته
-
 # Personal Finance Manager
 
 A simple desktop application to manage personal expenses, save them to CSV, and view reports.
@@ -31,18 +9,33 @@ A simple desktop application to manage personal expenses, save them to CSV, and 
 - Simple GUI using Tkinter.
 
 ## Setup
+
 1. Clone this repository:
 ```bash
 git clone <repo_url>
 cd PersonalFinanceManager
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
 pip install -r requirements.txt
 python main.py
-
----
-
-### **2️⃣ main.py**
-```python
-from src.expense_manager import *
-
-if __name__ == "__main__":
-    start_app()
+PersonalFinanceManager/
+│
+├─ README.md
+├─ main.py
+├─ requirements.txt
+│
+├─ src/
+│   └─ expense_manager.py  # Contains the main logic for managing expenses
+│
+├─ data/
+│   └─ sample_expenses.csv  # Sample CSV file with expenses
+│
+├─ docs/
+│   └─ user_guide.md        # User guide documentation
+│
+├─ tests/
+│   └─ test_expense_manager.py  # Unit tests for expense manager
+│
+└─ screenshots/
+    └─ app_screenshot.png      # Screenshot of the app
